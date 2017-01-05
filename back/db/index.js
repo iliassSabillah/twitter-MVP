@@ -6,9 +6,9 @@ const Sequelize = require('sequelize');
 // const sequelizeConnection = new Sequelize('postgres://c4q-ac26@localhost:5432/twitter-db', {
 // const sequelizeConnection = new Sequelize('postgres://nyapalgatkuoth@localhost:5432/twitter-db', {
 // const sequelizeConnection = new Sequelize('postgres://Luis@localhost:5432/twitter-db', {
-// const sequelizeConnection = new Sequelize('postgres://Rabiya@localhost:5432/twitter-db', {
-//   logging: false
-// });
+const sequelizeConnection = new Sequelize('postgres://Rabiya@localhost:5432/twitter-db', {
+  logging: false
+});
 
 //export out the databsae connection to be used elsewhere (for example, creating models and accessing our database in our API)
 module.exports = sequelizeConnection;
