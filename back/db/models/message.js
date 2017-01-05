@@ -6,10 +6,10 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [1,160]
       }
-  }, {
+  },
     classMethods: {
-      associate: function(models) {
-        Message.hasOne(User, { through: 'user_message', foreignKey: 'userId'})
+      associate: function(models){
+        Message.hasOne(models.User, { through: 'user_message', foreignKey: 'userId'})
       }
     }
   });
