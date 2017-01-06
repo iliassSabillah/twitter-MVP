@@ -1,10 +1,7 @@
 'use strict';
 
-const sequelizeConnection = require('../index');
-
-
-module.exports = (sequelize, DataTypes)=> {
-    let User = sequelizeConnection.define('User', {
+module.exports = function(sequelize, DataTypes) {
+  let User = sequelize.define('User', {
             username: {
                 type: DataTypes.STRING,
                 validate: {
