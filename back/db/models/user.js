@@ -66,7 +66,7 @@ module.exports = (sequelize, DataTypes)=> {
                 validate: {
                     len: [1,160]
                 }
-            }
+            },
             classMethods: {
               associate: function(models) {
                 // associations can be defined here
